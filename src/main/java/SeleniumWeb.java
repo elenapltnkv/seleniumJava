@@ -9,7 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import java.util.ArrayList;
 import java.util.List;
 
-public class seleniumWeb {
+public class SeleniumWeb {
     public static void main(String[] args) throws InterruptedException {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--no-sandbox")
@@ -24,9 +24,9 @@ public class seleniumWeb {
         driver.findElement(By.xpath("//input[1]")).click();
         driver.findElement(By.xpath("//input[1]")).sendKeys("Game of the thrones");
         driver.findElement(By.xpath("//div[2]/button/div")).click();
-        driver.findElement(By.xpath("//div/ul/li[1]/div/a")).click();
+        //driver.findElement(By.xpath("//div/ul/li[1]/div/a")).click();
         driver.findElement(By.xpath("//button[1]")).click();
-        driver.findElement(By.xpath("//span[contains(@tone, 'white')]")).click();
+        //driver.findElement(By.xpath("//span[contains(@tone, 'white')]")).click();
         List<WebElement> menuItems = driver.findElements(By.xpath("//span[@class='_2ZRlR']"));
         Thread.sleep(5000);
 
